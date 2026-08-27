@@ -1,0 +1,16 @@
+node_modules/
+articles/.vitepress/cache/
+articles/.vitepress/dist/
+.DS_Store
+*.log
+
+# 本地研究底稿，不推送
+research.md
+research/
+diagrams/
+decisions/
+
+# 项目内部文档，不推送
+CHECKLIST.md
+AGENTS.md
+
