@@ -74,6 +74,10 @@ export default defineConfig({
           {
             text: '06 · Agent MCP 工具接入',
             link: '/06-weknora-agent-mcp'
+          },
+          {
+            text: '07 · Agent 长期记忆',
+            link: '/07-weknora-agent-long-term-memory'
           }
         ]
       }

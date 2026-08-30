@@ -393,4 +393,4 @@ WeKnora 没有把 MCP 写进 Agent Loop。Workspace 先保存 MCP Service；一�
 
 持久化边界也很清楚：Service 配置、审批 policy、OAuth client 与 token 在 PostgreSQL；OAuth 临时 state 和跨副本 resolution 在 Redis；client connection 与等待中的 goroutine 留在单个 Go 进程。多副本路由已经处理，但 Agent Run 仍不是 durable workflow。
 
-下一篇适合回到第一篇留下的异步任务：文档解析为什么进入 Asynq，队列如何分工，失败重试和任务状态之间到底是什么关系。
+下一篇回到 Agent 自己的数据：一次对话结束后，哪些用户信息会变成长期记忆，它们又怎样进入新会话的 System Prompt。

@@ -59,3 +59,9 @@ features:
 从 Workspace 中的一条 MCP Service 配置开始，追踪 Agent 如何确定本轮服务范围、发现并注册远端 Tool，以及 OAuth、人工审批和连接状态如何进入一次 Tool Call。
 
 分析基线：WeKnora `0.7.2` · commit `4e25684b` · 2026-08-27
+
+### 07 · [拆解 WeKnora Memory：Agent 如何形成跨会话长期记忆](/07-weknora-agent-long-term-memory)
+
+从一句明确的记忆指令开始，追踪长期记忆的写入、后台提取、更新与召回，以及 Memory 如何进入 Agent Context 和 RAG 检索。
+
+分析基线：WeKnora `0.7.2` · commit `4e25684b` · 2026-08-28
