@@ -385,3 +385,5 @@ flowchart LR
 WeKnora 没有把聊天记录直接当作长期记忆。显式指令和后台提取最终都进入 `Service.write`，经过敏感信息过滤、重复检查、冲突替换和 tombstone 检查后写入 PostgreSQL。
 
 新请求开始时，系统分别组织常驻信息和与当前问题相关的 fact、task，再将结果放入 `<user_memory>`。Agent 可以继续调用 `search_memory`；普通 RAG 则会用这些信息参与 query rewrite 和文档排序。
+
+下一篇先追知识库录入：一份文档怎样经过解析、切块和 embedding，最后变成可以被检索的索引。检索链放在再下一篇。

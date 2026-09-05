@@ -78,7 +78,15 @@ export default defineConfig({
           {
             text: '07 · Agent 长期记忆',
             link: '/07-weknora-agent-long-term-memory'
-          }
+          },
+          {
+            text: '08 · 知识库录入',
+            link: '/08-weknora-knowledge-ingestion'
+          },
+          {
+            text: '09 · RAG 知识库检索',
+            link: '/09-weknora-rag-retrieval'
+          },
         ]
       }
     ],

@@ -65,3 +65,15 @@ features:
 从一句明确的记忆指令开始，追踪长期记忆的写入、后台提取、更新与召回，以及 Memory 如何进入 Agent Context 和 RAG 检索。
 
 分析基线：WeKnora `0.7.2` · commit `4e25684b` · 2026-08-28
+
+### 08 · [拆解 WeKnora 知识库：一份文档是如何变成可检索索引的](/08-weknora-knowledge-ingestion)
+
+从文件上传开始，追踪 Knowledge 记录、`document:process`、docreader、Go chunker、embedding 和检索索引之间的异步调用链。
+
+分析基线：WeKnora `0.7.2` · commit `4e25684b` · 2026-09-02
+
+### 09 · [拆解 WeKnora RAG：一次知识库检索是如何完成的](/09-weknora-rag-retrieval)
+
+从已经建立好的检索索引开始，追踪普通 KnowledgeQA 与 Agent `knowledge_search` 如何确定范围、准备 query、执行混合召回、重排候选并处理引用。
+
+分析基线：WeKnora `0.7.2` · commit `4e25684b` · 2026-09-01
